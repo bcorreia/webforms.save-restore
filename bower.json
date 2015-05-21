@@ -1,0 +1,25 @@
+{
+  "name": "webforms.save-restore",
+  "version": "1.0.0",
+  "homepage": "https://github.com/bcorreia/webforms.save-restore",
+  "authors": [
+    "Bruno Correia <mail@bcorreia.com>"
+  ],
+  "main": [
+    "dist/webforms.save-restore.js",
+    "dist/webforms.save-restore.min.js"
+  ],
+  "description": "HTML5 web storage",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": "~2.1.4"
+  }
+}

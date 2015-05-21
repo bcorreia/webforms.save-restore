@@ -1,0 +1,111 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8" />
+    <title>webforms.save-restore</title>
+    <link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <form data-role="job-application" action="#" class="col-sm-8" method="post">
+            <hr />
+            <div class="form-group">
+                <label class="control-label" for="email">Input text</label>
+                <input type="text" class="form-control" id="email" placeholder="Email" name="email" />
+            </div>
+
+            <hr />
+            <div class="form-group">
+                <label class="control-label" for="multiSelect">Multicon-select</label>
+                <select multiple="multiple" class="form-control" id="multiSelect" name="multiSelect">
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five</option>
+                </select>
+            </div>
+
+            <hr />
+            <div class="form-group">
+                <label class="control-label">Select</label>
+                <select class="form-control" name="selectOne">
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five</option>
+                </select>
+            </div>
+
+            <hr />
+            <div class="form-group">
+                <label class="control-label">Checkboxes</label>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="optionsCheckboxList[]" value="option1" /> Option one is this and that be sure
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="optionsCheckboxList[]" value="option2" /> Option two can also be checked
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="optionsCheckboxList[]" value="option3" /> Option three can yes, you guessed
+                    </label>
+                </div>
+            </div>
+
+            <hr />
+            <div class="form-group">
+                <label class="control-label">Radio buttons</label>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="checked" /> Option one is this and that be sure to include
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" /> Option two can is something else
+                    </label>
+                </div>
+            </div>
+
+            <hr />
+            <div class="form-group">
+                <textarea class="form-control" rows="3" placeholder="Hello" name="textarea"></textarea>
+            </div>
+
+            <hr />
+            <p><mark>Reload the page after <strong>Save</strong>, then click <strong>Restore</strong>.</mark><br />
+            <em>The current state will be saved on localStorage.</em></p>
+
+            <p><mark>On submit, this demo removes the <strong>Saved</strong> values, nothing else.</mark></p>
+            <hr />
+            <div class="form-actions">
+                <button class="btn btn-default save" type="submit">Save</button>
+                <button class="btn btn-default restore" type="submit">Restore</button>
+                <button class="btn btn-primary clean" type="submit">Sumbit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- $ and webforms.save-restore.js -->
+    <script src="../components/jQuery/dist/jquery.min.js"></script>
+    <script src="./webforms.save-restore.js"></script>
+
+    <script>
+        $(function() {
+            $("form")
+            .on("click", ".save", webforms.save) // save
+            .on("click", ".restore", webforms.restore) // restore
+            .on("submit", function(event) {
+                event.preventDefault();
+                webforms.clean.call(this); // clean
+            });
+        });
+    </script>
+</body>
+</html>
