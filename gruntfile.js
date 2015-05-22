@@ -1,7 +1,12 @@
 module.exports = function (grunt) {
 
     grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
         uglify: {
+            options: {
+               // the banner is inserted at the top of the output
+               banner: '/*! <%= pkg.name %> v<%= pkg.version %> */\n'
+            },
             all: {
                 files: {
                     'dist/webforms.save-restore.min.js': ['src/webforms.save-restore.js']
