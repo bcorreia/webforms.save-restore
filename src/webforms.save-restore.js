@@ -1,10 +1,3 @@
-/**
- * $ bower install --save webforms.save-restore
- *
- * Coded with care and love.
- * Bruno Correia
- *
- */
 var webforms = (function() {
         var pub = {};
 

@@ -1,8 +1,8 @@
 /**
- * $ bower install --save webforms.save-restore
+ * webforms.save-restore - version 1.0.0
  *
- * Coded with care and love.
- * Bruno Correia
+ * https://github.com/bcorreia/webforms.save-restore
+ * Bruno Correia - mail@bcorreia.com
  *
  */
 var webforms = (function() {
