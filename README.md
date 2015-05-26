@@ -13,10 +13,12 @@ Additional reading<br />
 ## Demo
 [Basic example](http://bcorreia.com/projects/webforms.save-restore/src/)
 
-## Get started
-Install using bower, or download project archive.
+## Getting started
+You may install using package managers, or download project [archive](https://github.com/bcorreia/webforms.save-restore/archive/master.zip).<br />
+*Installing via `bower` will bring in the dependencies as well.*
 ```bash
-$ bower install --save webforms.save-restore
+bower install webforms.save-restore
+npm install webforms.save-restore
 ```
 
 ## Usage
