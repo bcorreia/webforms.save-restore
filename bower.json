@@ -1,5 +1,6 @@
 {
   "name": "webforms.save-restore",
+  "description": "Save and Restore form values using HTML5 localStorage.",
   "version": "1.0.0",
   "homepage": "https://github.com/bcorreia/webforms.save-restore",
   "authors": [

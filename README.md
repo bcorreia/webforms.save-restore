@@ -1,4 +1,6 @@
 # webforms.save-restore
+![Bower version](https://img.shields.io/bower/v/webforms.save-restore.svg?style=flat)
+[![npm version](https://img.shields.io/npm/v/webforms.save-restore.svg?style=flat)](https://www.npmjs.com/package/webforms.save-restore)
 
 Save and Restore form values using HTML5 localStorage.<br />
 *Coded with care and love.*

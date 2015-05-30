@@ -1,7 +1,7 @@
 {
   "name": "webforms.save-restore",
   "version": "1.0.0",
-  "description": "HTML5 local storage",
+  "description": "Save and Restore form values using HTML5 localStorage.",
   "main": "dist/webforms.save-restore.js",
   "repository": {
     "type": "git",
