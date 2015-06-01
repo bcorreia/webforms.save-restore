@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish', './' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose publish [ './' ]
+5 verbose cache add [ './', null ]
+6 verbose cache add name=undefined spec="./" args=["./",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: './',
+7 verbose parsed url   path: './',
+7 verbose parsed url   href: './' }
+8 silly lockFile 0ee6c175- ./
+9 verbose lock ./ /Users/Bruno/.npm/0ee6c175-.lock
+10 verbose tar pack [ '/Users/Bruno/.npm/webforms.save-restore/1.0.0/package.tgz',
+10 verbose tar pack   './' ]
+11 verbose tarball /Users/Bruno/.npm/webforms.save-restore/1.0.0/package.tgz
+12 verbose folder ./
+13 info prepublish webforms.save-restore@1.0.0
+14 silly lockFile 04cb2bca-tar tar://./
+15 verbose lock tar://./ /Users/Bruno/.npm/04cb2bca-tar.lock
+16 silly lockFile 3f7bcaf1-s-save-restore-1-0-0-package-tgz tar:///Users/Bruno/.npm/webforms.save-restore/1.0.0/package.tgz
+17 verbose lock tar:///Users/Bruno/.npm/webforms.save-restore/1.0.0/package.tgz /Users/Bruno/.npm/3f7bcaf1-s-save-restore-1-0-0-package-tgz.lock
+18 silly lockFile 04cb2bca-tar tar://./
+19 silly lockFile 04cb2bca-tar tar://./
+20 silly lockFile 3f7bcaf1-s-save-restore-1-0-0-package-tgz tar:///Users/Bruno/.npm/webforms.save-restore/1.0.0/package.tgz
+21 silly lockFile 3f7bcaf1-s-save-restore-1-0-0-package-tgz tar:///Users/Bruno/.npm/webforms.save-restore/1.0.0/package.tgz
+22 silly lockFile c46c83c5-forms-save-restore-1-0-0-package /Users/Bruno/.npm/webforms.save-restore/1.0.0/package
+23 verbose lock /Users/Bruno/.npm/webforms.save-restore/1.0.0/package /Users/Bruno/.npm/c46c83c5-forms-save-restore-1-0-0-package.lock
+24 silly lockFile c46c83c5-forms-save-restore-1-0-0-package /Users/Bruno/.npm/webforms.save-restore/1.0.0/package
+25 silly lockFile c46c83c5-forms-save-restore-1-0-0-package /Users/Bruno/.npm/webforms.save-restore/1.0.0/package
+26 silly lockFile 0ee6c175- ./
+27 silly lockFile 0ee6c175- ./
+28 silly publish { name: 'webforms.save-restore',
+28 silly publish   version: '1.0.0',
+28 silly publish   description: 'Save and Restore form values using HTML5 localStorage.',
+28 silly publish   main: 'dist/webforms.save-restore.js',
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'https://github.com/bcorreia/webforms.save-restore' },
+28 silly publish   author:
+28 silly publish    { name: 'Bruno Correia',
+28 silly publish      email: 'mail@bcorreia.com',
+28 silly publish      url: 'http://bcorreia.com' },
+28 silly publish   license: 'MIT',
+28 silly publish   devDependencies:
+28 silly publish    { grunt: '^0.4.5',
+28 silly publish      'grunt-banner': '^0.4.0',
+28 silly publish      'grunt-contrib-copy': '^0.8.0',
+28 silly publish      'grunt-contrib-uglify': '^0.9.1' },
+28 silly publish   readme: '# webforms.save-restore\n![Bower version](https://img.shields.io/bower/v/webforms.save-restore.svg?style=flat)\n[![npm version](https://img.shields.io/npm/v/webforms.save-restore.svg?style=flat)](https://www.npmjs.com/package/webforms.save-restore)\n\nSave and Restore form values using HTML5 localStorage.<br />\n*Coded with care and love.*\n\n> Before HTML5, application data had to be stored in cookies, included in every server request. Local storage is more secure, and large amounts of data can be stored locally, without affecting website performance.\n> Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server.\n> Local storage is per domain. All pages, from one domain, can store and access the same data.\n\nAdditional reading<br />\n[Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)\n\n## Demo\n[Basic example](http://bcorreia.com/projects/webforms.save-restore/src/)\n\n## Getting started\nYou may install using package managers, or download project [archive](https://github.com/bcorreia/webforms.save-restore/archive/master.zip).<br />\n*Installing via `bower` will bring in the dependencies as well.*\n```bash\nbower install webforms.save-restore\nnpm install webforms.save-restore\n```\n\n## Usage\n```javascript\n$(function() {\n    $("form")\n    .on("click", ".save", webforms.save)            // save\n    .on("click", ".restore", webforms.restore)      // restore\n    .on("submit", function(event) {\n        event.preventDefault();\n        webforms.clean.call(this);                  // clean\n                                                    // do something else\n    });\n});\n```\n\n## Dependency\n```bash\nbower install --save jQuery\n```\n\n## Browser support\n- Chrome\n- Firefox\n- Safari\n- IE 10+\n\n## License\nThis software is free to use under the MIT license.\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: 'fa51e40f8cf2f746d0a1c6df3bbda9e1074bc04e',
+28 silly publish   bugs: { url: 'https://github.com/bcorreia/webforms.save-restore/issues' },
+28 silly publish   homepage: 'https://github.com/bcorreia/webforms.save-restore',
+28 silly publish   _id: 'webforms.save-restore@1.0.0',
+28 silly publish   scripts: {},
+28 silly publish   _shasum: '5514aaa44b7f36c7f3ef4d3841914d7619c812c5',
+28 silly publish   _from: './' }
+29 verbose request where is /webforms.save-restore
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 9641701cb754a918
+32 verbose url raw /webforms.save-restore
+33 verbose url resolving [ 'https://registry.npmjs.org/', './webforms.save-restore' ]
+34 verbose url resolved https://registry.npmjs.org/webforms.save-restore
+35 verbose request where is https://registry.npmjs.org/webforms.save-restore
+36 info trying registry request attempt 1 at 13:34:56
+37 http PUT https://registry.npmjs.org/webforms.save-restore
+38 http 403 https://registry.npmjs.org/webforms.save-restore
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '95',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Sat, 30 May 2015 20:34:57 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-lax1432-LAX',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1433018097.111273,VS0,VE434' }
+40 error publish Failed PUT 403
+41 error Error: "You cannot publish over the previously published version 1.0.0." : webforms.save-restore
+41 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+41 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+41 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:943:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Darwin 14.3.0
+44 error command "node" "/usr/local/bin/npm" "publish" "./"
+45 error cwd /Users/Bruno/Dropbox/Projects/webforms.save-restore
+46 error node -v v0.10.33
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]
