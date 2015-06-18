@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/bcorreia/webforms.save-restore.svg?branch=master)](https://travis-ci.org/bcorreia/webforms.save-restore)
 
 Save and Restore form values using HTML5 localStorage.<br />
-*Coded with care and love.*
+[**Demo**](http://bcorreia.com/projects/webforms.save-restore/src/)
 
 > Before HTML5, application data had to be stored in cookies, included in every server request. Local storage is more secure, and large amounts of data can be stored locally, without affecting website performance.
 > Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server.
@@ -12,9 +12,6 @@ Save and Restore form values using HTML5 localStorage.<br />
 
 Additional reading<br />
 [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
-
-## Demo
-[Basic example](http://bcorreia.com/projects/webforms.save-restore/src/)
 
 ## Getting started
 You may install using package managers, or download project [archive](https://github.com/bcorreia/webforms.save-restore/archive/master.zip).<br />
@@ -50,4 +47,4 @@ bower install --save jQuery
 - IE 10+
 
 ## License
-This software is free to use under the MIT license.
+This software is free to use under the <a href="https://github.com/bcorreia/webforms.save-restore/blob/master/license.md">MIT license</a>.
