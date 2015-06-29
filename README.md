@@ -3,6 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/webforms.save-restore.svg?style=flat)](https://www.npmjs.com/package/webforms.save-restore)
 [![Build Status](https://travis-ci.org/bcorreia/webforms.save-restore.svg?branch=master)](https://travis-ci.org/bcorreia/webforms.save-restore)
 
+---
 Save and Restore form values using HTML5 localStorage.<br />
 [**Demo**](http://bcorreia.com/projects/webforms.save-restore/src/)
 
