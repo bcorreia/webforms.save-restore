@@ -15,11 +15,12 @@ Additional reading<br />
 [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
 
 ## Getting started
-You may install using package managers, or download project [archive](https://github.com/bcorreia/webforms.save-restore/archive/master.zip).<br />
-*Installing via `bower` will bring in the dependencies as well.*
+You may install using package managers, or download project [archive](https://github.com/bcorreia/webforms.save-restore/archive/master.zip).
 ```bash
 bower install webforms.save-restore
 npm install webforms.save-restore
+
+# webforms.save-restore.min.js (minified version)
 ```
 
 ## Usage
