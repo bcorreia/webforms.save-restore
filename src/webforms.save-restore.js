@@ -1,7 +1,6 @@
 var webforms = (function() {
-        var pub = {};
-
-        pub.save = function(event) {
+    return {
+        save: function(event) {
             event.preventDefault();
 
             var form = $(this).closest("form"),
@@ -9,9 +8,8 @@ var webforms = (function() {
                 fields = form.find( $(':input').not(':input[type="password"]') ).serializeArray();
 
             localStorage.setItem(key, JSON.stringify(fields));
-        };
-
-        pub.restore = function(event) {
+        },
+        restore: function(event) {
             event.preventDefault();
 
             var form = $(this).closest("form"),
@@ -39,12 +37,10 @@ var webforms = (function() {
                         form.find(":input[name='"+val.name+"']").val(val.value);
                 }
             });
-        };
-
-        pub.clean = function() {
+        },
+        clean: function() {
             var key = $(this).attr("data-role");
             localStorage.removeItem(key);
-        };
-
-  return pub;
+        }
+    }
 }());

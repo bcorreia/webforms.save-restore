@@ -2,12 +2,17 @@
 <head>
     <meta charset="utf-8" />
     <title>webforms.save-restore</title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <style type="text/css" media="screen">
+        body * { font-family: "PT Sans"; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        .container  { max-width: 600px; }
+    </style>
 </head>
 
 <body>
     <div class="container">
-        <form data-role="job-application" action="#" class="col-sm-8" method="post">
+        <form data-role="job-application" action="#" class="col-sm-12" method="post">
             <hr />
             <div class="form-group">
                 <label class="control-label" for="email">Input text</label>
@@ -79,11 +84,11 @@
             </div>
 
             <hr />
-            <h3>How to use</h3>
+            <h3>Testing this demo:</h3>
             <ol style="padding:0 0 0 20px">
                 <li>Enter some data above</li>
                 <li>Click <strong>Save</strong></li>
-                <li>Reload the page</li>
+                <li>Reload the browser window</li>
                 <li>Click <strong>Restore</strong></li>
             </ol>
 
@@ -98,8 +103,8 @@
         </form>
     </div>
 
-    <!-- $ and webforms.save-restore.js -->
-    <script src="../components/jQuery/dist/jquery.min.js"></script>
+    <!-- webforms.save-restore.js -->
+    <script src="../packages/jQuery/dist/jquery.min.js"></script>
     <script src="./webforms.save-restore.js"></script>
 
     <script>
