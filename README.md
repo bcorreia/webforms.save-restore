@@ -31,14 +31,9 @@ $(function() {
     .on("submit", function(event) {
         event.preventDefault();
         webforms.clean.call(this);                  // clean
-                                                    // do something else
+       // do something else
     });
 });
-```
-
-## Dependency
-```bash
-bower install --save jQuery
 ```
 
 ## Browser support
